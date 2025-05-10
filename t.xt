@@ -1,0 +1,76 @@
+Manager Dashboard – Key Sections & Analytics
+1. Team Overview
+Total active users
+
+Online/Offline status
+
+Live timers / Active sessions
+
+Total hours logged today / this week / month
+
+Top performers (based on time logged or task completion)
+
+2. Time Logs Summary
+Daily / weekly / monthly logs per user
+
+Break vs Work time ratio
+
+Overtime / under-time alerts
+
+Idle time detection (if supported)
+
+3. Individual User Reports
+Select a user and view:
+
+Time spent per task/project
+
+Average session length
+
+Most common time of activity (early bird/night owl)
+
+Weekly trends
+
+Missed logins / gaps in tracking
+
+4. Project/Task Time Distribution
+Time breakdown by:
+
+Project
+
+Task Category
+
+Client (if applicable)
+
+Insights:
+
+Which projects consume most time?
+
+Task categories with longest durations?
+
+5. Attendance & Punctuality
+Daily check-in/check-out time
+
+Number of days worked / missed
+
+Lateness / early logout frequency
+
+6. Efficiency Metrics
+Time on task vs. break
+
+Utilization percentage = (productive time / total tracked time) * 100
+
+Time spent idle / away from device (if implemented)
+
+7. Custom Alerts / Flags
+Users exceeding max break time
+
+Unusual work patterns
+
+Users with sudden drop/increase in time logs
+
+8. Export / Download
+Export detailed reports as:
+
+PDF summaries
+
+Excel (CSV) for HR/Payroll

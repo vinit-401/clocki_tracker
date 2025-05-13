@@ -140,6 +140,19 @@ class _SignUpScreenState extends State<SignUpScreen> {
                           borderRadius: BorderRadius.circular(12)),
                     ),
                   ),
+                  const SizedBox(height: 20), TextField(
+                    controller: _confirmPasswordController,
+                    obscureText: true,
+                    style: const TextStyle(color: Colors.white),
+                    decoration: InputDecoration(
+                      labelText: 'WorkSpace ID',
+                      labelStyle: const TextStyle(color: Colors.white70),
+                      filled: true,
+                      fillColor: Colors.white.withOpacity(0.1),
+                      border: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(12)),
+                    ),
+                  ),
                   const SizedBox(height: 20),
                   Row(
                     children: [

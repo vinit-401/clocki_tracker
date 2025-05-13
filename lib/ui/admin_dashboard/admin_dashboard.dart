@@ -1,5 +1,6 @@
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
+import '../temp.dart';
 
 class AdminDashboard extends StatefulWidget {
   const AdminDashboard({super.key});
@@ -131,6 +132,7 @@ class _AdminDashboardState extends State<AdminDashboard> {
                 ),
               ),
             ),
+            ProjectList(),
           ],
         ),
       ),
@@ -149,6 +151,43 @@ class _AdminDashboardState extends State<AdminDashboard> {
           ),
           Text(title),
         ],
+      ),
+    );
+  }
+}
+class ProjectList extends StatefulWidget {
+  @override
+  _ProjectListState createState() => _ProjectListState();
+}
+
+class _ProjectListState extends State<ProjectList> {
+  List<String> projects = ["Initial Task"];
+
+  void _removeItem(int index) {
+    setState(() {
+      projects.removeAt(index);
+    });
+  }
+
+  void _duplicateItem(int index, String value) {
+    setState(() {
+      projects.insert(index + 1, value);
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      height: 400,
+      child: ListView.builder(
+        itemCount: projects.length,
+        itemBuilder: (context, index) {
+          return ProjectItem(
+            initialWork: projects[index],
+            onRemove: () => _removeItem(index),
+            onDuplicate: (val) => _duplicateItem(index, val),
+          );
+        },
       ),
     );
   }

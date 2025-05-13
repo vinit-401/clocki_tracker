@@ -42,7 +42,7 @@ dependencies:
   fluttertoast: ^8.2.12
   flutter_screenutil: ^5.9.3
   fl_chart: ^1.0.0
-
+  flutter_launcher_icons: ^0.14.3
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -95,3 +95,15 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/to/font-from-package
+# ICON changer plugin #
+flutter_launcher_icons:
+  android: "ic_launcher"
+  ios: true
+  image_path: "assets/logo.png"
+  remove_alpha_ios: true
+  adaptive_icon_background: "#FFFFFFFF"
+  adaptive_icon_foreground: "assets/logo.png"
+  #image_path_android: "assets/logo.png"
+  #image_path_ios: "assets/logo.png"
+
+  #flutter pub run flutter_launcher_icons:main
